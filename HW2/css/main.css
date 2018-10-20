@@ -8,15 +8,11 @@ li{
      display: flex;
      justify-content: space-between;
      margin-top: 10px;
-     text-align: left;
 }
  input{
      width: 300px;
      margin-left: 50px;
      margin-right: 0;
-}
- label{
-     text-align: left;
 }
  select{
      width: 300px;
