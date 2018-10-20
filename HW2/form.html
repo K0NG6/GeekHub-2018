@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Profile edit page</h1>
+	<form action="#" method="post">
+		<fieldset name="basicInfo" title="Basic info">
+			<legend>Basic info</legend>
+			<ul class="basicInfo">
+				<li>
+					<label for="ID">ID</label>
+					<input type="number" name="ID" id="ID" placeholder="725" disabled>
+				</li>
+				<li>
+					<label for="firstName">First Name</label>
+					<input type="text" name="firstName" id="firstName">
+				</li>
+				<li>
+					<label for="lastName">Last Name</label>
+					<input type="text" name="lastName" id="lastName">
+				</li>
+				<li>
+					<label for="Password">Password</label> 
+					<input type="Password" name="Password" id="Password">
+				</li>
+				<li>
+					<label for="phone">Phone</label> 
+					<input type="tel" name="phone" id="phone" placeholder="380">
+				</li>
+				<li>
+					<label for="email">Email</label> 
+					<input type="email" name="email" id="email" placeholder="myemail@gmail.com">
+				</li>
+				<li class="keepEmail">
+					<input type="checkbox" name="keepEmail" id="keepEmail">Keep my Email address private
+					Well remove your public profile email and use 1978331+username@users
+				</li>
+				<li>
+					<label for="DOB">DOB</label> 
+					<input type="date" name="DOB" id="DOB">
+				</li>
+				<li>
+					<label for="blogURL">Blog url</label> 
+					<input type="url" name="blogURL" id="blogURL" placeholder="http://">
+				</li>
+				<li class="aboutMe">
+					<label for="aboutMe">About me</label> 
+					<textarea name="aboutMe" id="aboutMe"></textarea>
+				</li>
+				<li>
+					<label for="profilePicture">Profile picture</label>
+					<input type="file" name="profilePicture" id="profilePicture" accept="image/*">
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset name="basicInfo" title="Profesional info">
+			<legend>Profesional info</legend>
+			<ul class="profInfo">
+				<li>
+					<label for="desire">Desire to study</label>
+					<input type="range" name="desire" id="desire" min="0" max="100">
+				</li>
+				<li>
+					<label for="experience">Experience</label>
+					<input type="number" name="experience" id="experience" placeholder="3">
+				</li>
+				<li>
+					<p>Development Experience</p>
+					<ul class="devExp">
+						<li>
+							<input type="radio" name="devExp" id="devExp1" value="1">
+							<label for="devExp1">Learning to Program</label>
+						</li>
+						<li>
+							<input type="radio" name="devExp" id="devExp2" value="2" checked>
+							<label for="devExp2">Junior Developer</label>
+						</li>
+						<li>
+							<input type="radio" name="devExp" id="devExp3" value="3">
+							<label for="devExp3">Mid-Level Developer</label>
+						</li>
+						<li>				
+							<input type="radio" name="devExp" id="devExp4" value="4">
+							<label for="devExp4">Senior Developer</label>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<p>Country</p>
+					<select size="1">
+						<option selected disabled>-Choose Your Country-</option>
+					    <option value="Ukraine">Ukraine</option>
+					    <option value="USA">USA</option>
+					    <option value="Thailand">Thailand</option>
+					    <option value="Spain">Spain</option>
+				   </select>
+				</li>
+				<li>
+					<p>Skills</p>
+					<ul class="devExp">
+						<li>
+							<input type="checkbox" name="skills" id="skills1" value="1" checked="">
+							<label for="devExp1">HTML</label>
+						</li>
+						<li>
+							<input type="checkbox" name="skills" id="skills2" value="2">
+							<label for="skills2">CSS</label>
+						</li>
+						<li>
+							<input type="checkbox" name="skills" id="skills3" value="3">
+							<label for="devExp3">JavaScript</label>
+						</li>
+						<li>				
+							<input type="checkbox" name="dskills" id="skills4" value="4">
+							<label for="skills4">R</label>
+						</li>
+						<li>				
+							<input type="checkbox" name="dskills" id="skills4" value="4">
+							<label for="skills4">Scala</label>
+						</li>
+						<li>				
+							<input type="checkbox" name="dskills" id="skills4" value="4">
+							<label for="skills4">Haskell</label>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
