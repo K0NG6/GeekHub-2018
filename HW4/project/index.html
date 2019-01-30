@@ -11,6 +11,26 @@
 </head>
 <body>
 	<header class="header">
+        <div class="mobile">
+            <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+            <input id="toggle" type="checkbox">
+
+            <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+            <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+            <label class="toggle-container" for="toggle">
+                <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+                <span class="button button-toggle"></span>
+            </label>
+
+            <!-- The nav menu -->
+            <nav class="nav-mobile">
+                <a class="nav-item" href="">About</a>
+                <a class="nav-item" href="">FAQ</a>
+                <a class="nav-item" href="">Support</a>
+                <a class="nav-item" href="">Blog</a>
+            </nav>
+        </div>
 		<nav class="nav">
 			<a href="#"><h1><img src="img/logo.png" alt="HeyU" width="121px" height="45px"></h1></a>
 			<ul class="header-nav">
@@ -26,17 +46,15 @@
 				<p>With <b>HeyU</b>, you&apos;ll get fast, simple, secure messaging!</p>
 				<a href="#">Download</a>
 			</div>
-			<div>
 				<img class="header-img" src="img/i-phone-7-silver.png" alt="phone chat" width="479" height="821">
-			</div>
 		</div>
 	</header>
 	<div class="wrappb">
 		<section class="about">
-			<div class="messaging">
+			<div class="messaging1">
 				<div class="photo-about1">
 					<img class="photo-messages" src="img/messages1.png" alt="screan messages">
-					<img class="photo-chat" src="img/conversation1.png" alt="screan chat">
+					<img class="photo-chat d-hidden" src="img/conversation1.png" alt="screan chat">
 				</div>
 				<div class="text-about">
 					<h2 class="headline2">Easy Messaging<span class="point">.</span></h2>
@@ -46,7 +64,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="messaging">
+			<div class="messaging2">
 				<div class="text-about">
 					<h2 class="headline2">Easy Messaging<span class="point">.</span></h2>
 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -56,7 +74,7 @@
 				</div>
 				<div class="photo-about2">
 					<img class="photo-contacts" src="img/messages1.png" alt="screan messages">
-					<img class="photo-groups" src="img/conversation1.png" alt="screan chat">
+					<img class="photo-groups d-hidden" src="img/conversation1.png" alt="screan chat">
 				</div>
 			</div>
 		</section>
