@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+body {
+  font-size: 13px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300; }
+
+.main {
+  height: 93px;
+  width: 92px;
+  position: relative;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(128, 128, 128, 0.64);
+  background: radial-gradient(circle at top left, transparent 10px, #808080 0) top left, radial-gradient(circle at top right, transparent 10px, #808080 0) top right, radial-gradient(circle at bottom right, transparent 10px, #808080 0) bottom right, radial-gradient(circle at bottom left, transparent 10px, #808080 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat; }
+
+.main:hover {
+  color: #ffffff;
+  background: #dd492a;
+  background: radial-gradient(circle at top left, transparent 10px, #dd492a 0) top left, radial-gradient(circle at top right, transparent 10px, #dd492a 0) top right, radial-gradient(circle at bottom right, transparent 10px, #dd492a 0) bottom right, radial-gradient(circle at bottom left, transparent 10px, #dd492a 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat; }
+
+.text-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.calendar {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+  .calendar li {
+    display: flex; }
+
+.main-item {
+  height: 93px;
+  width: 460px;
+  background-color: gray;
+  position: relative;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.4);
+  background: #808080;
+  background: radial-gradient(circle at top left, transparent 10px, #808080 0) top left, radial-gradient(circle at top right, transparent 10px, #808080 0) top right, radial-gradient(circle at bottom right, transparent 10px, #808080 0) bottom right, radial-gradient(circle at bottom left, transparent 10px, #808080 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat; }
+
+.active {
+  display: block;
+  color: #ffffff;
+  background: #dd492a;
+  background: radial-gradient(circle at top left, transparent 10px, #dd492a 0) top left, radial-gradient(circle at top right, transparent 10px, #dd492a 0) top right, radial-gradient(circle at bottom right, transparent 10px, #dd492a 0) bottom right, radial-gradient(circle at bottom left, transparent 10px, #dd492a 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat; }
+
+.text-slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px; }
+
+.arrow {
+  font-size: 24px;
+  color: #ffffff;
+  display: block;
+  width: 36px;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to top, #808080, #808080);
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer; }
+
+.arrow:hover {
+  background-image: linear-gradient(to top, #dd492a, #e54b2b); }
+
+.slide-img {
+  display: none;
+  width: 100%;
+  height: 100vh; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
